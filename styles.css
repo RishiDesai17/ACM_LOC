@@ -5,6 +5,10 @@
   min-width: 100%;
   
 }
+.font{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
 .heading{
     text-align: center;
     font-size: 90px;
@@ -16,12 +20,64 @@
   color: white;
   width: 100%;
 }
+.mainContent{
+    margin-top: 550px;
+    text-align: center;
+}
+.faqContainer{
+    margin-top: 25px;
+}
+.collapsible {
+    background-color: #0f4c75;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .active, .collapsible:hover {
+    background-color: #1b262c;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    margin-left: 20%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    width: 60%;
+  }
 @media only screen and (max-width: 887px) {
     .content {
-      top: 11%
+      margin-left: 5%;
+      width: 90%;
+    }
+    .collapsible{
+        width: 90%;
     }
   }
-@media only screen and (max-width: 394px) {
+@media only screen and (max-width: 468px) {
+  .heading{
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 380px) {
   .heading{
     font-size: 70px;
   }
