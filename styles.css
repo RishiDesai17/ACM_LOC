@@ -1,13 +1,14 @@
 .video{
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 30%;
+  bottom: 0%;
   min-width: 100%;
-  
+  z-index: 0;
 }
 .font{
     text-align: center;
     font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 .heading{
     text-align: center;
@@ -21,7 +22,8 @@
   width: 100%;
 }
 .mainContent{
-    margin-top: 550px;
+    margin-top: 450px;
+    position: absolute;
     text-align: center;
 }
 .faqContainer{
@@ -39,6 +41,7 @@
     outline: none;
     font-size: 15px;
     border-radius: 5px;
+    z-index: 1;
   }
   .active, .collapsible:hover {
     background-color: #1b262c;
@@ -62,6 +65,42 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
     width: 60%;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    margin-bottom: 15px;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: #0f4c75;
+    color: white;
+    transform: rotateY(180deg);
   }
 @media only screen and (max-width: 887px) {
     .content {
