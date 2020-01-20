@@ -1,37 +1,6 @@
 let i=0;
-let count=0;
 let txt = "CODE ";
 let flag= true;
-let flip=false;
-// const fn = () => {
-//     const typing = () => {
-//         if (i < txt.length) {
-//           document.getElementsByClassName("initial")[0].innerHTML += txt.charAt(i);
-//           i++;
-//           setTimeout(typing, 150);
-//         //   if(i==8){
-//         //       document.getElementsByClassName("initial")[0].innerHTML="LINES "
-//         //       txt="OF WIT"
-//         //       i=0
-//         //       if (i < txt.length) {
-//         //         document.getElementsByClassName("initial")[0].innerHTML += txt.charAt(i);
-//         //         i++;
-//         //         setTimeout(typing, 150);
-//         //       }
-//         //   }
-//         //   console.log("abcd")
-//         //   count++;
-//         }
-//         else{
-//             const x = document.getElementById("blink");
-//             setInterval(()=>{
-//                 x.style.visibility = (x.style.visibility=="hidden"?"visible":"hidden")
-//             },500);
-//         }
-//     }
-//     typing();
-    
-// }
 const fn1 = () => {
     setInterval(()=>{
         const typing = () =>{
@@ -75,3 +44,43 @@ for (j = 0; j < coll.length; j++) {
     } 
   });
 }
+
+const words = ["CODE ", "WIT "];
+let a = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[a].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 500);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[a].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (a + 1)) {
+				a++;
+			} else {
+				a = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	loopDeleting();
+};
+
+typingEffect();

@@ -13,6 +13,20 @@
     font-size: 90px;
     font-family: 'Orbitron', sans-serif;
 }
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 90px;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+.flex {
+  text-align: center;
+}
+.header-sub-title {
+  color: #fff;
+  padding: 0.1em;
+}
 .headingContainer{
   position: absolute;
   top: 24%;
@@ -128,6 +142,6 @@
 }
 @media only screen and (max-width: 380px) {
   .heading{
-    font-size: 70px;
+    font-size: 61px;
   }
 }
