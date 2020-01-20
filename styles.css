@@ -1,9 +1,7 @@
 .video{
   position: fixed;
-  right: 0;
-  bottom: 0%;
   min-width: 100%;
-  z-index: 0;
+  min-height: 100%;
 }
 .font{
     text-align: center;
@@ -68,8 +66,8 @@
   }
   .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 350px;
+    width: 280px;
+    height: 340px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px;
   }
@@ -102,6 +100,10 @@
     color: white;
     transform: rotateY(180deg);
   }
+  .map{
+    width:550px;
+    height:430px;
+  }
 @media only screen and (max-width: 887px) {
     .content {
       margin-left: 5%;
@@ -110,10 +112,18 @@
     .collapsible{
         width: 90%;
     }
+    .map{
+      width: 450px;
+      height: 300px;
+    }
   }
 @media only screen and (max-width: 468px) {
   .heading{
     font-size: 70px;
+  }
+  .map{
+    width: 300px;
+    height: 250px;
   }
 }
 @media only screen and (max-width: 380px) {

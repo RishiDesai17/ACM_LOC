@@ -59,7 +59,7 @@ const fn1 = () => {
                 txt="WIT "
             }
         }
-    },900)
+    },850)
 }
 var coll = document.getElementsByClassName("collapsible");
 var j;
