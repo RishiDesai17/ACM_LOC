@@ -45,7 +45,7 @@ for (j = 0; j < coll.length; j++) {
   });
 }
 
-const words = ["CODE ", "WIT "];
+const words = ["CODE", "WIT"];
 let a = 0;
 let timer;
 
@@ -58,7 +58,7 @@ function typingEffect() {
 			deletingEffect();
 			return false;
 		};
-		timer = setTimeout(loopTyping, 500);
+		timer = setTimeout(loopTyping, 600);
 	};
 	loopTyping();
 };
