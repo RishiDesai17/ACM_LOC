@@ -12,8 +12,10 @@
   font-size: 20px;
   color:white;
 }
-.wrap {
+.wrapp {
     position: absolute;
+    margin-left: 35%;
+    margin-top: 290px;
 }
 .counter-modern-decor {
   margin:10px 0px;
@@ -303,10 +305,9 @@
 }
 .video {
   position: fixed;
-  min-width: 99%; 
+  min-width: 100%; 
   min-height: 100%;
 }
-/*desai  css*/
 .font{
   text-align: center;
   font-family: 'Orbitron', sans-serif;
@@ -480,9 +481,29 @@ width: 100%;
   width: 300px;
   height: 250px;
 }
+.wrapp{
+  margin-left: 0px;
+  margin-top: 350px;
+  margin-bottom: 50px;
+  width: 350px;
+  right: -20;
+}
+.tvi{
+  width: 350px;
+}
 }
 @media only screen and (max-width: 380px) {
 .heading{
   font-size: 61px;
+}
+.wrapp{
+  margin-left: 0px;
+  margin-top: 350px;
+  margin-bottom: 50px;
+  width: 350px;
+  right: -20;
+}
+.tvi{
+  width: 350px;
 }
 }
