@@ -13,7 +13,7 @@
   color:white;
 }
 .wrap {
-    position: relative;
+    position: absolute;
 }
 .counter-modern-decor {
   margin:10px 0px;
@@ -303,7 +303,7 @@
 }
 .video {
   position: fixed;
-  min-width: 100%; 
+  min-width: 99%; 
   min-height: 100%;
 }
 /*desai  css*/
@@ -369,7 +369,7 @@ padding: 0.1em;
 }
 .headingContainer{
 position: absolute;
-top: 24%;
+top: 20%;
 color: white;
 width: 100%;
 }

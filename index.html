@@ -43,21 +43,21 @@
      --> 
     
     <div class="container-fluid">
-        <!--
-            <div class="wrap" >
-            <img src="images/logo.gif" class="mx-auto d-block" alt="tv" >
-            <div class="textLoc" id="makehappy"></div>
-        </div>
-         -->
+        
+      <div class="wrap" style="margin-left: 35%; margin-top: 290px;">
+        <img src="images/logo.gif" class="mx-auto d-block" alt="tv" >
+        <div class="textLoc" id="makehappy" style="padding-right: 30px;padding-bottom: 5px;"></div>
+      </div>
+        
         
         <div class="headingContainer" style="align-items: center;">
             <!-- <h1 class="heading font"><span class="initial">LINES OF </span><span id="blink">_</span></h1> -->
           <h1 style="text-align: center;" ><span class="heading font header-sub-title">LINES  OF </span><span class="header-sub-title heading font" id="word"></span><span class="header-sub-title blink">_</span></h1>
           <br />
-          <h3 class="font">date</h3>
+          
         </div>
         <div class="mainContent" style="z-index: 1000;">
-          <div id="clockdiv">
+          <div id="clockdiv" style="margin-top: 200px;">
             <div>
               <span class="days"></span>
               <div class="smalltext">Days</div>
@@ -392,12 +392,12 @@
             }
             function text3()
             {
-                document.getElementById('makehappy').innerHTML="IS ON";
+                document.getElementById('makehappy').innerHTML="is on";
                 setTimeout(text4,550);
             }
             function text4()
             {
-                document.getElementById('makehappy').innerHTML="30TH Febuary";
+                document.getElementById('makehappy').innerHTML="24th March";
                 setTimeout(text1,550);
             }
             text1();
