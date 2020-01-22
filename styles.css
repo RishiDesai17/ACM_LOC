@@ -105,6 +105,10 @@
     content: "\2212";
   }
   
+  .prize{
+    margin-left: 6%;
+  }
+
   .content {
     padding: 0 18px;
     margin-left: 20%;
@@ -116,8 +120,8 @@
   }
   .flip-card {
     background-color: transparent;
-    width: 280px;
-    height: 340px;
+    width: 230px;
+    height: 232px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px;
   }
@@ -180,4 +184,5 @@
   .heading{
     font-size: 61px;
   }
+
 }
