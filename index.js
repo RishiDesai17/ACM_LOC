@@ -1,7 +1,6 @@
 let i=0;
 let txt = "CODE ";
 let flag= true;
-
 const fn1 = () => {
     setInterval(()=>{
         const typing = () =>{
@@ -31,20 +30,20 @@ const fn1 = () => {
         }
     },850)
 }
-// var final = new Date(2020, 1, 9, 23, 59, 59).getTime();
-// setInterval(() => {
-//   var present = new Date().getTime();
-//   var remainingTime = final - present;
-//   var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-//   document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
-//     minutes + "m " + seconds + "s ";
-//   if (remainingTime < 0) {
-//     document.getElementById("countdown").innerHTML = "";
-//   }
-// }, 1000);
+var final = new Date(2020, 1, 9, 23, 59, 59).getTime();
+setInterval(() => {
+  var present = new Date().getTime();
+  var remainingTime = final - present;
+  var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+    minutes + "m " + seconds + "s ";
+  if (remainingTime < 0) {
+    document.getElementById("countdown").innerHTML = "";
+  }
+}, 1000);
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
