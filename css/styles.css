@@ -475,6 +475,10 @@
   .heading {
     font-size: 70px;
 }
+  .faqContainer{
+    width: 140%;
+    margin-left: -70;
+  }
 }
 
   .list-type5{

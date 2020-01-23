@@ -54,7 +54,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(2020, 2, 24, 23, 59, 59);
+var deadline = new Date(2020, 1, 22, 23, 59, 59);
 initializeClock('clockdiv', deadline);
 
 var coll = document.getElementsByClassName("collapsible");
