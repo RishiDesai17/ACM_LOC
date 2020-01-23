@@ -64,7 +64,7 @@
 .mediaLink {
   font-size: 24px;
   margin: 5px;
-  color:#aadaff;
+  color:#aadaff !important ;
 }
 .footerLink:hover {
   color: white;
@@ -100,7 +100,13 @@
   box-sizing: border-box;
 }
 
-
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 90px;
+  }
+  @keyframes blink{
+  to { opacity: .0; }
+  }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -312,6 +318,7 @@
   min-width: 100%; 
   min-height: 100%;
 }
+/*desai  css*/
 .headingContainer{
   position: relative;
   top: 24%;
@@ -330,13 +337,6 @@
   font-family: 'Orbitron', sans-serif;
   color: white;
 }
-.blink {
-  animation: blink 0.5s infinite;
-  font-size: 90px;
-  }
-  @keyframes blink{
-  to { opacity: .0; }
-  }
 .heading{
   text-align: center;
   font-size: 90px;
@@ -388,7 +388,7 @@
   margin-top: 15px;
   opacity: 0.8656;
   padding: 18px;
-  width: 60%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
@@ -413,12 +413,13 @@
 
 .contents {
   padding: 0 18px;
-  margin-left: 20%;
+  margin-left: 10%;
   max-height: 0;
   overflow: hidden;
+  color: white;
   transition: max-height 0.2s ease-out;
   background-color: black;
-  width: 60%;
+  width: 80%;
 }
 .flip-card {
   background-color: transparent;
@@ -473,12 +474,8 @@
 @media only screen and (max-width: 468px)
 {
   .heading {
-    font-size: 70px;
+    font-size: 55px;
 }
-  .faqContainer{
-    width: 140%;
-    margin-left: -70;
-  }
 }
 
   .list-type5{
@@ -505,7 +502,7 @@
     .list-type5 a{
     text-decoration:none;
     color:white;
-    font-size:15px;
+    font-size:17px;
     font-family: inherit
     }
     
@@ -514,6 +511,7 @@
     -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
     transition: box-shadow 0.5s;
     padding: 30px;
+    color:white;
     }
     
     .list-type5 ol li:before {
@@ -541,4 +539,97 @@
     padding: 30px;
     
     }
+    /*
+    .slick-slide {
+      margin:0px 20px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-slider {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-touch-callout: none;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .slick-list {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .slick-list:focus {
+      outline: none;
+
+    }
+    .slick-list.dragging 
+    {
+      cursor: pointer;
+      cursor: hand;
+    }
+    .slick-slider .slick-track,
+    .slick-slider .slick-list
+{
+  transform: translate3d(0,0,0);
+
+}
+.slide-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: '';
+  display: table;
+}
+.slide-track:after {
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+.slick-slide 
+{
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rt1'] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide 
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide 
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+*/
+
   

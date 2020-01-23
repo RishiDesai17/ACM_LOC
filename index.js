@@ -1,5 +1,35 @@
 let i=0;
 let txt = "CODE ";
+let flag= true;
+const fn1 = () => {
+    setInterval(()=>{
+        const typing = () =>{
+            if (i < txt.length) {
+                document.getElementsByClassName("initial")[0].innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typing, 150);
+            }
+        }
+        typing();
+        if(txt.length==i){
+            let k=0;
+            flag=!flag;
+            // setInterval(()=>{
+            //     document.getElementsByClassName("initial")[0].innerHTML = document.getElementsByClassName("initial")[0].innerHTML.substring(0,document.getElementsByClassName("initial")[0].innerHTML.length-k);
+            //     k++;
+            //     flip=true;
+            // })
+            document.getElementsByClassName("initial")[0].innerHTML = "LINES OF "
+            i=0;
+            if(flag){
+                txt="CODE "
+            }
+            else{
+                txt="WIT "
+            }
+        }
+    },850)
+}
 var final = new Date(2020, 1, 9, 23, 59, 59).getTime();
 setInterval(() => {
   var present = new Date().getTime();
@@ -67,7 +97,12 @@ for (j = 0; j < coll.length; j++) {
     if (content.style.maxHeight){
       content.style.maxHeight = null;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+      for(var k = 0; k < j; k++){
+        document.getElementsByClassName("collapsible")[k].nextElementSibling.style.maxHeight=null;
+        document.getElementsByClassName("collapsible")[k].classList.remove("active");
+        content.style.maxHeight = content.scrollHeight + "px";
+        this.classList.add("active");
+      }
     } 
   });
 }
