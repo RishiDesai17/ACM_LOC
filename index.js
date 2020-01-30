@@ -1,35 +1,5 @@
 let i=0;
 let txt = "CODE ";
-let flag= true;
-const fn1 = () => {
-    setInterval(()=>{
-        const typing = () =>{
-            if (i < txt.length) {
-                document.getElementsByClassName("initial")[0].innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typing, 150);
-            }
-        }
-        typing();
-        if(txt.length==i){
-            let k=0;
-            flag=!flag;
-            // setInterval(()=>{
-            //     document.getElementsByClassName("initial")[0].innerHTML = document.getElementsByClassName("initial")[0].innerHTML.substring(0,document.getElementsByClassName("initial")[0].innerHTML.length-k);
-            //     k++;
-            //     flip=true;
-            // })
-            document.getElementsByClassName("initial")[0].innerHTML = "LINES OF "
-            i=0;
-            if(flag){
-                txt="CODE "
-            }
-            else{
-                txt="WIT "
-            }
-        }
-    },850)
-}
 var final = new Date(2020, 1, 9, 23, 59, 59).getTime();
 setInterval(() => {
   var present = new Date().getTime();
@@ -108,11 +78,12 @@ for (j = 0; j < coll.length; j++) {
 }
 
 
-const words = ["CODE", "WIT"];
+const words = ["DJ ACM","Presents","LOC 2.0"];
 let a = 0;
 let timer;
 
 function typingEffect() {
+    document.getElementById('word').innerHTML = "";
 	let word = words[a].split("");
 	var loopTyping = function() {
 		if (word.length > 0) {
@@ -121,7 +92,7 @@ function typingEffect() {
 			deletingEffect();
 			return false;
 		};
-		timer = setTimeout(loopTyping, 600);
+		timer = setTimeout(loopTyping, 258);
 	};
 	loopTyping();
 };
@@ -141,10 +112,10 @@ function deletingEffect() {
 			typingEffect();
 			return false;
 		};
-		timer = setTimeout(loopDeleting, 200);
+		timer = setTimeout(loopDeleting, 120);
 	};
 	loopDeleting();
 };
 
-typingEffect();
+//typingEffect();
 

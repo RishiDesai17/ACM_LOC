@@ -318,7 +318,6 @@
   min-width: 100%; 
   min-height: 100%;
 }
-/*desai  css*/
 .headingContainer{
   position: relative;
   top: 24%;
@@ -358,6 +357,7 @@
 }
 
 #clockdiv > div{
+  width: 120px;
 	padding: 20px;
 	border-radius: 3px;
   background: black;
@@ -427,18 +427,31 @@
   height: 280px;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -o-perspective: 1000px;
+  -moz-perspective: 1000px;
 }
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
   transform-style: preserve-3d;
+  transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.7s;
+  -o-transform-style: preserve-3d;
+  -o-transition: -o-transform 0.7s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: -moz-transform 0.7s;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -446,6 +459,9 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   margin-bottom: 15px;
 }
 .flip-card-front {
@@ -456,6 +472,10 @@
   background-color: #0f4c75;
   color: white;
   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
 .map{
   width: 100%;
@@ -465,7 +485,7 @@
   padding: 10px;
   opacity: 0.789;
   border-radius: 20px;
-  background: #0f4c75;
+  background: #7746e7;
 }
 .makeCenter {
   display: flex;
@@ -474,13 +494,27 @@
 @media only screen and (max-width: 468px)
 {
   .heading {
-    font-size: 55px;
+    font-size: 50px;
+  }
+  .blink{
+    font-size: 43px;
+  }
+  .date{
+    font-size: 22px;
+  }
+  
 }
+@media only screen and (max-width: 390px){
+  #clockdiv > div{
+    width: 115px;
+    margin: 11px;
+  }
+  #clockdiv{
+    font-size: 40px;
+  }
 }
 
-  .list-type5{
-    
-    }
+  
     .list-type5 ol {
     list-style-type: none;
     list-style-type: decimal !ie; /*IE 7- hack*/
@@ -539,97 +573,8 @@
     padding: 30px;
     
     }
-    /*
-    .slick-slide {
-      margin:0px 20px;
+    .styleCom,.styleCom:hover {
+      text-decoration: none;
+      color:#aadaff !important;
     }
-    .slick-slide img {
-      width: 100%;
-    }
-    .slick-slider {
-      position: relative;
-      display: block;
-      box-sizing: border-box;
-      user-select: none;
-      -webkit-touch-callout: none;
-      touch-action: pan-y;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .slick-list {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-    .slick-list:focus {
-      outline: none;
-
-    }
-    .slick-list.dragging 
-    {
-      cursor: pointer;
-      cursor: hand;
-    }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list
-{
-  transform: translate3d(0,0,0);
-
-}
-.slide-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-.slick-track:before,
-.slick-track:after {
-  content: '';
-  display: table;
-}
-.slide-track:after {
-  clear: both;
-}
-.slick-loading .slick-track
-{
-  visibility: hidden;
-}
-.slick-slide 
-{
-  display: block;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-[dir='rt1'] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide 
-{
-  visibility: hidden;
-}
-.slick-vertical .slick-slide 
-{
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-  display: none;
-}
-*/
-
   
